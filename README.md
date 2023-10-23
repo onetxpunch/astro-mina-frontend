@@ -1,8 +1,8 @@
-# Astro + Mina Starter Kit: Basics
+# 🧡 Astro + 🤍 Mina Starter Kit
 
-Astro is a lightning fast frontend framework designed around island architechure instead of single page apps which allows surgical updates to isolated sections of DOM code, it's the future of fast web apps.
+Astro is a fast frontend framework designed around island architecture instead of single page apps which allows surgical updates to isolated sections of DOM code.
 
-This template adds some QOL setup to the framework that would help you develop a frontend application quickly.
+Mina is a ZkApp layer for developing decentralized applications! This template is an intersection of both projects, it provides a friendly jump off point for rapidly iterating on frontend application ideas.
 
 ## 🚀 Project Structure
 
