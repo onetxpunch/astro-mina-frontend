@@ -1,25 +1,23 @@
 ---
+import {SEO} from "astro-seo";
 interface Props {
 	title: string;
+	description?: string;
 }
 
 const { title } = Astro.props;
+const description = Astro.props.description ?? "A heavily optimized description full of well-researched keywords."
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
+	<SEO title={title}
+	description={description} titleTemplate="" />
 	<body>
 		<slot />
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;

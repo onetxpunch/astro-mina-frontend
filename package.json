@@ -1,7 +1,19 @@
 {
   "name": "astro-mina-frontend",
-  "type": "module",
   "version": "0.0.1",
+  "dependencies": {
+    "@astrojs/mdx": "^1.1.2",
+    "@astrojs/react": "^3.0.3",
+    "@astrojs/tailwind": "^5.0.2",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^3.3.2",
+    "astro-seo": "^0.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.69.4",
+    "tailwindcss": "^3.0.24"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,14 +21,5 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
-    "@astrojs/react": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.2",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "astro": "^3.3.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "tailwindcss": "^3.0.24"
-  }
+  "type": "module"
 }
