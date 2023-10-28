@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const Connect = () => {
-  const [connectData, setConnectData] = useState();
+  const [connectData, setConnectData] = useState<string[]>();
   const tryConnect = async () => {
     try {
       let data = await window.mina.requestAccounts();
@@ -12,7 +12,7 @@ export const Connect = () => {
   };
 
   return connectData ? (
-    <div>{JSON.stringify(connectData)}</div>
+    <div>Connected: {connectData[0]}</div>
   ) : (
     <div onClick={tryConnect}>Connect</div>
   );

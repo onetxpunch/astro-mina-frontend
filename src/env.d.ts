@@ -47,9 +47,9 @@ type VerifyFieldsArguments = {
 
 interface Window {
   mina: {
-    requestAccount: Promise<string[]>;
-    requestNetwork: Promise<"Mainnet" | "Devnet" | "Berkeley" | "Unknown">;
-    getAccounts: Promise<string[]>;
+    requestAccounts(): Promise<string[]>;
+    requestNetwork(): Promise<"Mainnet" | "Devnet" | "Berkeley" | "Unknown">;
+    getAccounts(): Promise<string[]>;
     sendTransaction(args: SendTransactionArgs): Promise<{ hash: string }>;
     signMessage(args: SignMessageArgs): Promise<SignedData>;
     verifyMessage(args: VerifyMessageArgs): Promise<boolean>;
